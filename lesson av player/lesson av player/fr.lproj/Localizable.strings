@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  lesson av player
+
+  Created by Karina Kovaleva on 23.11.22.
+  
+*/
+
+"button_Start" = "début";
+"button_Stop" = "arrêt";
+"button_Press" = "presse";

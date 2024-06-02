@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uw2-Eu-X5a">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start For Square GameVC-->
+        <scene sceneID="GqW-Dc-kGM">
+            <objects>
+                <viewController storyboardIdentifier="StartForSquareGameVC" id="ug5-8f-uGu" customClass="StartForSquareGameVC" customModule="HomeWork10_Karina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x7I-vS-nfi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3a-38-cwp">
+                                <rect key="frame" x="49" y="387" width="317" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="88D-AG-LtQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oJo-JA-52g"/>
+                    <connections>
+                        <outlet property="buttonForStart" destination="I3a-38-cwp" id="uNN-Rg-lnA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VAN-5v-Zf7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1134.7826086956522" y="279.91071428571428"/>
+        </scene>
+        <!--Square Game View Controller-->
+        <scene sceneID="uUA-Tj-tWY">
+            <objects>
+                <viewController storyboardIdentifier="SquareGameViewController" id="90E-7G-X0i" customClass="SquareGameViewController" customModule="HomeWork10_Karina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nda-bH-aeU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="s6p-7r-o9y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Spo-UN-dHE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ftx-Gf-PRP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1945" y="280"/>
+        </scene>
+        <!--Circle Game-->
+        <scene sceneID="Chc-pY-Xav">
+            <objects>
+                <viewController id="fKy-Rl-LTy" customClass="CircleGameViewController" customModule="HomeWork10_Karina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nbx-as-t8O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hKF-4y-2rS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Circle Game" image="circle" catalog="system" selectedImage="circle" id="ex3-gD-Aid"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wf3-2F-4SJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="-386"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="MaI-nx-oP5">
+            <objects>
+                <tabBarController id="Uw2-Eu-X5a" customClass="MainTabBarController" customModule="HomeWork10_Karina" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gk5-mz-q1n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fKy-Rl-LTy" kind="relationship" relationship="viewControllers" id="4dx-0b-YXl"/>
+                        <segue destination="jA9-ZN-JBr" kind="relationship" relationship="viewControllers" id="EIa-QV-BOy"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d2Q-8v-aCJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-551" y="-33"/>
+        </scene>
+        <!--Square Game-->
+        <scene sceneID="xuL-5s-eHr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jA9-ZN-JBr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Square Game" image="square" catalog="system" selectedImage="square" id="LFk-V3-dbQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2kb-KO-Myf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ug5-8f-uGu" kind="relationship" relationship="rootViewController" id="f5P-nc-7t9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zFD-5Z-TdS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="280"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="square" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
